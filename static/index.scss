@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    background: var(--greyLight-1);
+    font-size: 100%;
+}
+
+:root {
+    --primary-light: #8abdff;
+    --primary: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --white: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
+}
+  
+$shadow: .3rem .3rem .6rem var(--greyLight-2), -.2rem -.2rem .5rem var(--white);
+$inner-shadow: inset .2rem .2rem .5rem var(--greyLight-2), inset -.2rem -.2rem .5rem var(--white);
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: var(--greyLight-1);
+}
+  
+.components {
+    width: 75rem;
+    min-height: 40rem;
+    border-radius: 3rem;
+    box-shadow:.8rem .8rem 1.4rem var(--greyLight-2), -.2rem -.2rem 1.8rem var(--white);
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    width: 67em;
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #8ab3f1;
+}
+
+.logo-container {
+    position: relative;
+    width: 9em;
+    height: 5em;
+}
+
+.logo-text {
+    font-family: 'Rampart One', cursive;
+    color: var(--primary);
+    position: absolute;
+    top: 1em;
+    left: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btns {
+    display: flex;
+}
+
+.btn {
+    width: 10rem;
+    height: 3rem;
+    margin: 0 1em 0 1em;
+    border-radius: 1rem;
+    box-shadow: $shadow;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease;
+    text-decoration: none;
+    color: var(--primary);
+
+    &:active {
+        box-shadow: $inner-shadow;
+    }
+
+    &:hover { color: var(--white); }
+}
+
+.btn1 {
+    background: var(--primary);
+    color: var(--greyLight-1);
+    pointer-events: none;
+}
+
+.profile-btn {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    box-shadow: $shadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    fill: var(--greyDark);
+    transition: all .5s ease;
+
+    &:active {
+        box-shadow: $inner-shadow;
+        fill: var(--primary);
+    }
+    &:hover {
+        fill: var(--primary);
+    }
+
+    & svg {
+        width: 1em;
+        height: 1em;
+    }
+}

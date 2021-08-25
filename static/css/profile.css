@@ -1,0 +1,49 @@
+.profile-btn {
+  background: var(--primary);
+  color: var(--greyLight-1);
+  pointer-events: none;
+}
+
+.btn1 {
+  color: var(--primary);
+  background: none;
+  pointer-events: visible;
+}
+
+.prof-text {
+  font-family: "Rampart One", cursive;
+  color: var(--primary);
+  margin-top: 2em;
+}
+
+.prof-link {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  position: relative;
+  cursor: pointer;
+  font-size: 24px;
+  text-decoration: none;
+  font-style: italic;
+}
+.prof-link:after {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  content: "";
+  transition: width 0.5s;
+}
+.prof-link:hover:after {
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: var(--primary);
+  content: "";
+  transition: width 0.5s;
+}

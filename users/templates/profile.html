@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+{% block styles %}
+    <title>Профиль</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+{% endblock styles %}
+
+{% block content %}
+    {% if username %}  
+        <h1>Привет, {{ username }}!</h1>
+        <p>Твой город {{ city }}</p>  
+        <p>Тут ты можешь <a href="../logout/">выйти</a>.</p>  
+    {% else %}
+        <p class="prof-text">Тебе нужно <a class="prof-link" href="../register/">зарегистрироваться</a> или <a class="prof-link" href="../login/">войти</a> на сайт!</p>
+    {% endif %}  
+{% endblock content %}

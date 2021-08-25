@@ -1,0 +1,37 @@
+.main {
+  width: 100vw;
+  min-height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading-container {
+  position: relative;
+  width: 25em;
+}
+.heading-container hr {
+  background-color: #6d5dfc;
+  color: #6d5dfc;
+  height: 0.8em;
+}
+.heading-container .heading {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  background: #E4EBF5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -25px;
+}
+
+.heading, .heading-text {
+  color: #6d5dfc;
+}
+
+.heading-text {
+  margin-top: 2em;
+}

@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block styles %}
+	{% load static %}
+	<title>Вход</title>
+	<link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock styles %}
+
+{% block content %}
+	<form method="post">  
+		{% csrf_token %}  
+		{{ form.as_ul }}  
+		<input type="submit" value="Войти">  
+	</form>  
+{% endblock content %}

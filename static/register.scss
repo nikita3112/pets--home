@@ -1,0 +1,11 @@
+.profile-btn {
+    background: var(--primary);
+    color: var(--greyLight-1);
+    pointer-events: none;
+}
+
+.btn1 {
+    color: var(--primary);
+    background: none;
+    pointer-events: visible;
+}

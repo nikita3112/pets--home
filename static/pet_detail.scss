@@ -1,0 +1,73 @@
+$shadow: .3rem .3rem .6rem var(--greyLight-2), -.2rem -.2rem .5rem var(--white);
+$inner-shadow: inset .2rem .2rem .5rem var(--greyLight-2), inset -.2rem -.2rem .5rem var(--white);
+
+.btn1 {
+    color: var(--primary);
+    background: none;
+    pointer-events: visible;
+}
+
+.pet-container {
+    position: relative;
+    display: flex;
+    margin-top: 2em;
+    width: 67em;
+    min-height: 20em;
+    border-radius: 3rem;
+    box-shadow:.8rem .8rem 1.4rem var(--greyLight-2), -.2rem -.2rem 1.8rem var(--white);
+    align-items: center;
+
+    & img {
+        width: 20em;
+        height: 20em;
+        border-top-left-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+    }
+}
+
+.pet-info {
+    margin-left: 2em;   
+    color: var(--primary);
+
+    & p {
+        margin: 1.5em 0 1.5em 0;
+        font-family: 'Rampart One', cursive;
+    }
+}
+
+.card-btn {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    box-shadow: $shadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--greyDark);
+    background: var(--greyLight-1);
+    transition: all .5s ease;
+
+    &:active {
+        box-shadow: $inner-shadow;
+        color: var(--primary);
+    }
+
+    & svg {
+        transition: all .5s ease;
+        width: 1em;
+        height: 1em;
+        fill: var(--greyDark);
+    }
+
+    &:hover {
+        & svg {
+            fill: var(--primary);
+        }
+        
+    }
+}

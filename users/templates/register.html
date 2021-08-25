@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+{% block styles %}
+  {% load static %}
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="{% static 'css/register.css' %}">
+{% endblock styles %}
+
+
+{% block content %}
+  <form method="post">  
+    {% csrf_token %}  
+      {{ form.as_ul }}  
+      <input type="submit" value="Зарегистрироваться">  
+  </form>  
+{% endblock content %}
