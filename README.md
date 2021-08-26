@@ -1,2 +1,2 @@
 # Проект приют для животных
-[Ссылка на сайт](htps://https://pets--home.herokuapp.com/)
+[Ссылка на сайт](https://https://pets--home.herokuapp.com/)
