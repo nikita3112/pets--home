@@ -28,9 +28,9 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "z&wu!512le(1^t+8g)dj!58^u&99=m-d*+1v*
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-DEBUG = bool(os.environ.get('DEBUG', True))
+DEBUG = bool(os.environ.get('DEBUG', False))
 
-ALLOWED_HOSTS = ['127.0.0.1', ]
+ALLOWED_HOSTS = ['127.0.0.1', 'pets--home.herokuapp.com']
 
 
 # Application definition
